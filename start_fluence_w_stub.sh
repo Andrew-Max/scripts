@@ -1,1 +1,0 @@
-gulp --env=stubs --widgetContainer=iframe

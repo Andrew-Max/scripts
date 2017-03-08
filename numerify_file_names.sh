@@ -1,10 +1,20 @@
-COUNTER=1
-DIR="/home/yotta/Pictures/blog-pics/"
-for i in ~/Pictures/blog-pics/*
+COUNTER=100
+
+DIR="/home/yotta/Pictures/blog-pics/aguadas-cali/sized/pano/"
+for i in $DIR*
+
 do
   NEWNAME="$DIR$COUNTER.jpg"
   mv -- "$i" "$NEWNAME"
   ((COUNTER++))
 done
 
-  # NEWNAME="${i/%.fasta/.fa}"
+COUNTER=1
+
+for i in $DIR*
+
+do
+  NEWNAME="$DIR$COUNTER.jpg"
+  mv -- "$i" "$NEWNAME"
+  ((COUNTER++))
+done

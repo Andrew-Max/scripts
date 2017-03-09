@@ -66,9 +66,9 @@ done
 cp -r ./full/ ./sized
 cp -r ./full/ ./thumb
 
-mogrify -resize 1800x1800 ./sized/vertical
-mogrify -resize 1800x1800 ./sized/horizontal
-mogrify -resize 1800x1800 ./thumb/pano
+mogrify -resize 1800x1800 ./sized/vertical/*
+mogrify -resize 1800x1800 ./sized/horizontal/*
+mogrify -resize 1800x1800 ./thumb/pano/*
 
 mogrify -resize 600x600 ./thumb/vertical/*
 mogrify -resize 600x600 ./thumb/horizontal/*
